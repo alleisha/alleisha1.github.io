@@ -10,6 +10,11 @@ h1{
     color: rgb(255, 255, 255);
     text-align: center;
     font-size: 60px;
+    font-family: 'aufgang';
+}
+@font-face {
+    font-family: 'aufgang';
+    src: url('fonts/BBBAufgangOstGX.ttf');
 }
 h5{
     color: rgb(255, 255, 255);
