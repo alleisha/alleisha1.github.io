@@ -7,15 +7,37 @@ h4{color: rgb(255, 255, 255);
 
 }
 h1{
-    color: rgb(255, 255, 255);
+    color: rgb(139, 135, 207);
     text-align: center;
-    font-family: 'aufgang';
     font-size: 60px;
+    font-family: 'aufgang';
+    animation-name: fadeOutIn;
+    animation-duration: 8s;
+    animation-fill-mode: forwards;
+  }
+  
+  .fade-in-out {
+    position: relative;
+    animation: slide-in-out 10s linear infinite;
+}
+
+@keyframes slide-in-out {
+    0% {
+        opacity: 0;
+        left: 100%;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        left: 0;
+    }
 }
 
 @font-face {
     font-family: 'aufgang';
-    src: url('fonts/BBBAufgangOstGX.otf');
+    src: url('aufgang.otf');
 }
 
 h5{
@@ -25,23 +47,23 @@ h5{
     font-family: 'Source Code Pro', monospace
 }
 h2{
-    color: rgb(220, 0, 0);
+    color: rgb(0, 201, 191);
     border-left: 4px solid rgb(0, 0, 0);
     border-right: 4px solid rgb(0, 0, 0);
     padding-left: 10px;
     padding-right: 10px;
     font-size: 30px;
-    font-family: 'Source Code Pro', monospace
+    font-family: 'aufgang';
 
 }
 h3{
-    color: rgb(220, 0, 0);
+    color: rgb(0, 201, 191);
     border-left: 4px solid rgb(0, 0, 0);
     border-right: 4px solid rgb(0, 0, 0);
     padding-left: 10px;
     padding-right: 10px;
     font-size: 30px;
-    font-family: 'Source Code Pro', monospace
+    font-family: 'aufgang';
 }
 p1{
     color: rgb(255, 255, 255);
