@@ -12,10 +12,12 @@ h1{
     font-family: 'aufgang';
     font-size: 60px;
 }
+
 @font-face {
     font-family: 'aufgang';
     src: url('BBBAufgangOstGX.ttf');
 }
+
 h5{
     color: rgb(255, 255, 255);
     text-align: center;
