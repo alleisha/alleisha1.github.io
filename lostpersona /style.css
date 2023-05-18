@@ -63,6 +63,7 @@ div.banner {
   top: 0;
   left: 0;
   overflow: hidden;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .banner p {
