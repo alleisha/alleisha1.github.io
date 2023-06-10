@@ -1,70 +1,146 @@
 body {
-    background-color: white;
-    font: size 36px;;
-    height: 100vh;
+  background-image: url("webpagebackground.jpg");
+  background-size: cover;
+  font-size: 36px;
+  height: 100vh;
   margin: 0;
   padding: 0;
 }
 
-div.row{
-      display:flex;
-      flex-wrap:wrap;
+div.row1 {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 div.colwhite{
-    outline: 2px solid cyan;
-    width: 20%;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    height: auto;
+    background-color: blue;
+    flex: wrap;
+    height: auto;
+    position: absolute;
 }
+
+div.row1 marquee {
+  font-size: 1.5vw;
+  font-weight: bold;
+  white-space: nowrap;
+  font-family: Helvetica, sans-serif;
+  top: 0vh;
+  position: absolute;
+  word-spacing: 2vw;
+  animation: marquee linear infinite;
+  animation-duration: 20s; /* Adjust the duration as needed */
+  animation-iteration-count: infinite;
+flex-wrap: wrap;
+  display: flex;
+  background-color: blue;
+  color: white;
+  padding-top: 1.2vw;
+  padding-bottom: 1.2vw;
+}
+
 
 div.colsilver{
-    outline: 2px solid cyan;
-    background-image: url("silver.jpg");
-    background-size: cover;
+  background-image: url("silver.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 60vw;
+  height: auto;
+  aspect-ratio: 400/600; /* Adjust the aspect ratio as needed */
+  margin: 10% auto;
+  position: absolute;
+  left: 2vw;
+  right: 2vw;
+}
+
+div.textboxone p{
+  position: absolute;
+  top: 1vh;
+  left: 1.5vw;
+  right: 1.5vw;
+  color: black;
+flex-wrap: wrap;
+font-family: dottedreg;
+height: auto;
+background-size: cover;
     background-position: center;
-   width: 40%;
-   height: auto;
-   padding-top: 20%;
-   padding-bottom: 20%;
-   padding-left: 10%;
-   padding-right: 10%;
-   margin-top: 10%;
-   margin-bottom: 10%;
-   margin-left: 5%;
-   margin-right: 10%;
+    font-size: 1.6vw;
+    line-height: 1.5;
+    align-items: justify;
 }
-
-div.textboxone{
-    position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0); /* Adjust the opacity and color as needed */
-  color: rgb(0, 0, 0);
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-div.overlay h1 {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
   
-  div.overlay p {
-    font-size: 18px;
-  }
+@font-face {
+  font-family: dottedreg;
+  src: url(dottedreg.ttf);
+}
+
+.button-container {
+  display: flex;
+  justify-content: center; /* Center the items horizontally */
+  align-items: center; /* Center the items vertically */
+  position: absolute;
+bottom: 20px;
+flex: wrap;
+margin-left: 21%;
+}
+
+
+div.colsilver button{
+  background-color: blue;
+  font-size: 1.2vw;
+  font-family: dottedreg;
+  line-height: 110%;
+  color: rgb(255, 255, 255);
+  margin-right: 13%;
+  padding: 1vw 1vw;
+  flex: wrap;
+}
+
+div.colsilver button:last-child {
+  margin-right: 0;
+}
+
 
 div.colwhite2{
     outline: 2px solid cyan;
-    width: 20%;
+    width: 100%;
     margin-left: 0%;
     margin-right: 0%;
 }
 
- 
+.popup {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  left: 80%;
+  transform: translate(0, -50%);
+  width: 15vw; /* Set the width of the pop-up image */
+  height: auto; /* Adjust the height proportionally */
+  animation: popupAnimation 10s linear infinite;
+}
+
+
+.popup img {
+  width: 100%;
+  height: auto;
+}
+
+@keyframes popupAnimation {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.8);
+  }
+  50% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.8);
+  }
+}
 
 
   
