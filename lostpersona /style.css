@@ -142,6 +142,28 @@ div.colwhite2{
   }
 }
 
+.webcam-container {
+  position: relative;
+  width: 100%;
+}
+
+#webcam-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+
+.webcam-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  pointer-events: none; /* Make the overlay image ignore mouse events */
+}
+
 
   
   
