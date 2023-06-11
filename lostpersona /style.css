@@ -145,6 +145,8 @@ div.colwhite2{
 .webcam-container {
   position: relative;
   width: 100%;
+  top: 20%; /* Adjust the vertical position */
+  transform: translateY(-20%);
 }
 
 #webcam-video {
