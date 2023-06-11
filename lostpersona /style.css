@@ -48,7 +48,7 @@ div.colsilver{
   background-position: center;
   width: 60vw;
   height: auto;
-  aspect-ratio: 400/600; /* Adjust the aspect ratio as needed */
+  aspect-ratio: 400/440; /* Adjust the aspect ratio as needed */
   margin: 10% auto;
   position: absolute;
   left: 2vw;
@@ -145,8 +145,8 @@ div.colwhite2{
 .webcam-container {
   position: relative;
   width: 100%;
-  top: 20%; /* Adjust the vertical position */
-  transform: translateY(-20%);
+  top: 16%; /* Adjust the vertical position */
+  transform: translateY(-12%);
 }
 
 #webcam-video {
