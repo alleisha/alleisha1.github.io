@@ -145,7 +145,9 @@ div.colwhite2{
 .webcam-container {
   position: relative;
   width: 100%;
-  top: 16%; /* Adjust the vertical position */
+  height: 0;
+  padding-bottom: 56.25%; /* Set the desired aspect ratio (e.g., 16:9 = 9/16 * 100) */
+  top: 20%; /* Adjust the vertical position */
   transform: translateY(-12%);
 }
 
@@ -154,7 +156,8 @@ div.colwhite2{
   top: 0;
   left: 0;
   width: 100%;
-  height: 200vh;
+  height: 121%;
+  object-fit: cover;
 }
 
 .webcam-container img {
