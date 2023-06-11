@@ -81,7 +81,7 @@ background-size: cover;
   justify-content: center; /* Center the items horizontally */
   align-items: center; /* Center the items vertically */
   position: absolute;
-bottom: 20px;
+bottom: 10%;
 flex: wrap;
 margin-left: 21%;
 }
