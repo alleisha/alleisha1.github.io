@@ -2,9 +2,10 @@ body {
   background-image: url("webpagebackground.jpg");
   background-size: cover;
   font-size: 36px;
-  height: 100vh;
+  height: auto;
   margin: 0;
   padding: 0;
+  flex: wrap;
 }
 
 div.row1 {
