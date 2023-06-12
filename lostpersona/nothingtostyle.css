@@ -1,0 +1,209 @@
+body {
+    background-image: url("webpagebackground.jpg");
+    background-size: cover;
+    font-size: 36px;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    flex: wrap;
+  }
+  
+  div.row1 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  
+  div.colwhite{
+      width: 100%;
+      color: rgb(255, 255, 255);
+      height: auto;
+      background-color: blue;
+      flex: wrap;
+      height: auto;
+      position: absolute;
+  }
+  
+  div.row1 marquee {
+    font-size: 1.5vw;
+    font-weight: bold;
+    white-space: nowrap;
+    font-family: Helvetica, sans-serif;
+    top: 0vh;
+    position: absolute;
+    word-spacing: 2vw;
+    animation: marquee linear infinite;
+    animation-duration: 20s; /* Adjust the duration as needed */
+    animation-iteration-count: infinite;
+  flex-wrap: wrap;
+    display: flex;
+    background-color: blue;
+    color: white;
+    padding-top: 1.2vw;
+    padding-bottom: 1.2vw;
+  }
+  
+  
+  div.colsilver{
+    background-image: url("silver.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 60vw;
+    height: auto;
+    aspect-ratio: 400/440; /* Adjust the aspect ratio as needed */
+    margin: 10% auto;
+    position: absolute;
+    left: 2vw;
+    right: 2vw;
+  }
+  
+  div.textboxone p{
+    position: absolute;
+    top: 1vh;
+    left: 1.5vw;
+    right: 1.5vw;
+    color: black;
+  flex-wrap: wrap;
+  font-family: dottedreg;
+  height: auto;
+  background-size: cover;
+      background-position: center;
+      font-size: 1.6vw;
+      line-height: 1.5;
+      align-items: justify;
+  }
+    
+  @font-face {
+    font-family: dottedreg;
+    src: url(dottedreg.ttf);
+  }
+  
+  
+  div.textboxtwo p{
+    position: absolute;
+    bottom: 11vw;
+    left: 13vw;
+    color: black;
+  flex-wrap: wrap;
+  font-family: dottedreg;
+      font-size: 1.6vw;
+      line-height: 1.5;
+  }
+  
+  div.textboxthree p{
+    position: absolute;
+    bottom: 11vw;
+    right: 16.5vw;
+    color: black;
+  flex-wrap: wrap;
+  font-family: dottedreg;
+      font-size: 1.6vw;
+      line-height: 1.5;
+  }
+  
+  
+  .button-container {
+    display: flex;
+    justify-content: center; /* Center the items horizontally */
+    align-items: center; /* Center the items vertically */
+    position: absolute;
+  bottom: 10%;
+  flex: wrap;
+  margin-left: 21%;
+  gap: 12px; /* Add this line to set the spacing between buttons */
+  }
+  
+  
+  div.colsilver button{
+    background-color: blue;
+    font-size: 1.2vw;
+    font-family: dottedreg;
+    line-height: 110%;
+    color: rgb(255, 255, 255);
+    margin-right: 16%;
+    padding: 1vw 1vw;
+    flex: wrap;
+  }
+  
+  div.colsilver button:last-child {
+    margin-right: 0;
+  }
+  
+  div.colsilver button:hover {
+    background-color: darkblue; /* Change the background color on hover */
+  }
+  
+  
+  div.colwhite2{
+      outline: 2px solid cyan;
+      width: 100%;
+      margin-left: 0%;
+      margin-right: 0%;
+  }
+  
+  .popup {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    left: 80%;
+    transform: translate(0, -50%);
+    width: 15vw; /* Set the width of the pop-up image */
+    height: auto; /* Adjust the height proportionally */
+    animation: popupAnimation 10s linear infinite;
+  }
+  
+  
+  .popup img {
+    width: 100%;
+    height: auto;
+  }
+  
+  @keyframes popupAnimation {
+    0% {
+      opacity: 0;
+      transform: translate(-50%, -50%) scale(0.8);
+    }
+    50% {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1.1);
+    }
+    100% {
+      opacity: 0;
+      transform: translate(-50%, -50%) scale(0.8);
+    }
+  }
+  
+  .webcam-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; /* Set the desired aspect ratio (e.g., 16:9 = 9/16 * 100) */
+    top: 20%; /* Adjust the vertical position */
+    transform: translateY(-12%);
+  }
+  
+  #webcam-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 121%;
+    object-fit: cover;
+  }
+  
+  .webcam-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    pointer-events: none; /* Make the overlay image ignore mouse events */
+  }
+  
+  
+    
+    
+    
+    
+    
+    
