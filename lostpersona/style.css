@@ -103,6 +103,10 @@ div.colsilver button:last-child {
   margin-right: 0;
 }
 
+div.colsilver button:hover {
+  background-color: darkblue; /* Change the background color on hover */
+}
+
 
 div.colwhite2{
     outline: 2px solid cyan;
