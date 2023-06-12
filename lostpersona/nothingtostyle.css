@@ -81,8 +81,8 @@ body {
   
   div.textboxtwo p{
     position: absolute;
-    bottom: 11vw;
-    left: 13vw;
+    bottom: 10vw;
+    left: 19vw;
     color: black;
   flex-wrap: wrap;
   font-family: dottedreg;
@@ -109,7 +109,7 @@ body {
     position: absolute;
   bottom: 10%;
   flex: wrap;
-  margin-left: 21%;
+  margin-left: 40%;
   gap: 12px; /* Add this line to set the spacing between buttons */
   }
   
