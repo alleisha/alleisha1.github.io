@@ -110,6 +110,7 @@ font-family: dottedreg;
 bottom: 10%;
 flex: wrap;
 margin-left: 21%;
+gap: 12px; /* Add this line to set the spacing between buttons */
 }
 
 
@@ -119,7 +120,7 @@ div.colsilver button{
   font-family: dottedreg;
   line-height: 110%;
   color: rgb(255, 255, 255);
-  margin-right: 13%;
+  margin-right: 16%;
   padding: 1vw 1vw;
   flex: wrap;
 }
